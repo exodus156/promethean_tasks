@@ -1,10 +1,12 @@
-import './scss/App.scss'
+import 'scss/App.scss'
+import { useBrowserRouter } from './hooks'
+import { RouterProvider } from 'react-router-dom'
 
 function App() {
+	const { router } = useBrowserRouter()
+
 	return (
-		<div className='flex text-xl'>
-			Init
-		</div>
+		<RouterProvider router={router} />
 	)
 }
 

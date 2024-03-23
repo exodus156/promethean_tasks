@@ -1,11 +1,17 @@
 @use './utils/' as *;
 
-:root {
+#root {
+  width: 100vw;
+  height: 100vh;
   background-color: $mainBgColor;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
 }
 
 .flex {
@@ -26,4 +32,16 @@
 
 .text-xl {
   @include textXl();
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex-column {
+  flex-direction: column;
 }

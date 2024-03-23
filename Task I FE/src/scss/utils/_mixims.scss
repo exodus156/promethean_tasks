@@ -6,34 +6,34 @@
   justify-content: $justifyContent;
 }
 
-@mixin textSm($fontWeight: $fontNormal) {
+@mixin textSm($fontWeight: $fontNormal, $fontSize: $fontSizeSm) {
   font-family: $fontFamily;
   font-weight: $fontWeight;
-  font-size: $fontSizeSm;
+  font-size: $fontSize;
   line-height: $lineHeightSm;
   color: $mainTextColor;
 }
 
-@mixin textBase($fontWeight: $fontNormal) {
+@mixin textBase($fontWeight: $fontNormal, $fontSize: $fontSizeBase) {
   font-family: $fontFamily;
   font-weight: $fontWeight;
-  font-size: $fontSizeBase;
+  font-size: $fontSize;
   line-height: $lineHeightBase;
   color: $mainTextColor;
 }
 
-@mixin textLg($fontWeight: $fontNormal) {
+@mixin textLg($fontWeight: $fontNormal, $fontSize: $fontSizeLg) {
   font-family: $fontFamily;
   font-weight: $fontWeight;
-  font-size: $fontSizeLg;
+  font-size: $fontSize;
   line-height: $lineHeightLg;
   color: $mainTextColor;
 }
 
-@mixin textXl($fontWeight: $fontNormal) {
+@mixin textXl($fontWeight: $fontNormal, $fontSize: $fontSizeXl) {
   font-family: $fontFamily;
   font-weight: $fontWeight;
-  font-size: $fontSizeXl;
+  font-size: $fontSize;
   line-height: $lineHeightXl;
   color: $mainTextColor;
 }
