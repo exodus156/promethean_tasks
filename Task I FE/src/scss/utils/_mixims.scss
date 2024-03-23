@@ -1,0 +1,39 @@
+@use './variables' as *;
+
+@mixin flex($alignItem: center, $justifyContent: center) {
+  display: flex;
+  align-items: $alignItem;
+  justify-content: $justifyContent;
+}
+
+@mixin textSm($fontWeight: $fontNormal) {
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  font-size: $fontSizeSm;
+  line-height: $lineHeightSm;
+  color: $mainTextColor;
+}
+
+@mixin textBase($fontWeight: $fontNormal) {
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  font-size: $fontSizeBase;
+  line-height: $lineHeightBase;
+  color: $mainTextColor;
+}
+
+@mixin textLg($fontWeight: $fontNormal) {
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  font-size: $fontSizeLg;
+  line-height: $lineHeightLg;
+  color: $mainTextColor;
+}
+
+@mixin textXl($fontWeight: $fontNormal) {
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  font-size: $fontSizeXl;
+  line-height: $lineHeightXl;
+  color: $mainTextColor;
+}
