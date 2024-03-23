@@ -1,0 +1,29 @@
+@use './utils/' as *;
+
+:root {
+  background-color: $mainBgColor;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flex {
+  @include flex();
+}
+
+.text-sm {
+  @include textSm();
+}
+
+.text-base {
+  @include textBase();
+}
+
+.text-lg {
+  @include textLg();
+}
+
+.text-xl {
+  @include textXl();
+}

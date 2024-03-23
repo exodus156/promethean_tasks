@@ -1,8 +1,8 @@
-import './App.css'
+import './scss/App.scss'
 
 function App() {
 	return (
-		<div>
+		<div className='flex text-xl'>
 			Init
 		</div>
 	)
