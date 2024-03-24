@@ -1,11 +1,15 @@
 import 'scss/App.scss'
-import { useBrowserRouter } from './hooks'
+import { useAppContext, useBrowserRouter, useLogin } from 'hooks'
 import { RouterProvider } from 'react-router-dom'
-import { NavBar } from 'components'
+import { NavBar, NavBarProps } from 'components'
 import { useState } from 'react'
 
 function App() {
 	const { router } = useBrowserRouter()
+	const { state } = useAppContext()
+	const { handleLogin, handleLogout } = useLogin()
+
+	const { isUserLoggedIn, username, currentPageIcon, currentPageTitle } = state
 
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -13,24 +17,17 @@ function App() {
 		setIsMenuOpen((prevState) => !prevState)
 	}
 
-	const handleLogin = () => {
-		console.log('Login')
-	}
-	const handleLogout = () => {
-		console.log('Logout')
-	}
-
 	return (
 		<>
 			<NavBar
-				isUserLoggedIn={true}
+				isUserLoggedIn={isUserLoggedIn}
 				isMenuOpen={isMenuOpen}
 				onMenuClick={handleMenuPress}
-				pageTitle="Test"
-				pageIcon="home"
+				pageTitle={currentPageTitle}
+				pageIcon={currentPageIcon as NavBarProps['pageIcon']}
 				onLogin={handleLogin}
 				onLogout={handleLogout}
-				username="username"
+				username={username}
 			/>
 			<RouterProvider router={router} />
 		</>
