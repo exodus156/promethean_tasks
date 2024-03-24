@@ -1,0 +1,14 @@
+@use 'scss/utils/' as *;
+
+.icon {
+	width: 24px;
+	height: 24px;
+}
+
+.iconStroke {
+	stroke: $mainTextColor;
+}
+
+.iconFill {
+	fill: $mainTextColor;
+}

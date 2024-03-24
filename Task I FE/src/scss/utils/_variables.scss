@@ -1,14 +1,14 @@
 $fontFamily: 'Helvetica';
 
-$fontSizeSm: 0.875rem;
-$fontSizeBase: 1rem;
-$fontSizeLg: 1.125rem;
-$fontSizeXl: 1.25rem;
+$fontSizeSm: 1.5vw;
+$fontSizeBase: 2vw;
+$fontSizeLg: 2.5vw;
+$fontSizeXl: 3vw;
 
-$lineHeightSm: 1.25rem;
-$lineHeightBase: 1.5rem;
-$lineHeightLg: 1.75rem;
-$lineHeightXl: 1.75rem;
+$lineHeightSm: 1.25vw;
+$lineHeightBase: 1.5vw;
+$lineHeightLg: 1.75vw;
+$lineHeightXl: 1.75vw;
 
 $fontNormal: 400;
 $fontMedium: 500;
@@ -17,3 +17,7 @@ $fontBold: 700;
 
 $mainBgColor: #ddd0c8;
 $mainTextColor: #323232;
+
+$buttonBgColor: #4f4f4f;
+$linkButtonBgColor: #735847;
+$iconButtonBgColor: #bfa798;

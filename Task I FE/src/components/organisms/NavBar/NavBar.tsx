@@ -1,15 +1,15 @@
-import { IconProps } from "components/atoms"
+import { IconProps } from 'components/atoms'
 
 export type NavBarProps = {
 	isUserLoggedIn: boolean
 	pageTitle: string
-	pageIcon: IconProps["iconName"]
+	pageIcon: IconProps['iconName']
 }
 
 export const NavBar: React.FC<NavBarProps> = ({
 	isUserLoggedIn,
 	pageIcon,
-	pageTitle
+	pageTitle,
 }) => {
 	return (
 		<div>

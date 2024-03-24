@@ -1,2 +1,2 @@
-export { PageContent } from './PageContent';
-export type { PageContentProps } from './PageContent';
+export { PageContent } from './PageContent'
+export type { PageContentProps } from './PageContent'

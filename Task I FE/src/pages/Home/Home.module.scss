@@ -1,5 +1,5 @@
 @use 'scss/utils/' as *;
 
 p {
-  @include textXl($fontSize: 15rem);
+	@include textXl($fontSize: 15vw);
 }
