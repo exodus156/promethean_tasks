@@ -14,4 +14,6 @@ Zastosowane rzeczy:
 Polecam stworzyć plik .env z `VITE_USERNAME=""`, tak jak w .env.template,
 inaczej będzie fallback do "Unknown username"
 
+`npm install` / `yarn` aby zainstalować paczki
+
 `npm run dev` aby odpalić aplikację `npm test` aby odpalić testy z Jest
