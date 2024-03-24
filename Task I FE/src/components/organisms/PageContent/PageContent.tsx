@@ -24,20 +24,20 @@ export const PageContent: React.FC<PageContentProps> = ({
 		switch (variant) {
 			case 'home':
 				setButtonsData([
-					{ text: 'Subpage1', linkTo: '/Subpage1' },
-					{ text: 'Subpage2', linkTo: '/Subpage2' },
+					{ text: 'Subpage1', linkTo: '/subpage1' },
+					{ text: 'Subpage2', linkTo: '/subpage2' },
 				])
 				break
 			case 'subpage1':
 				setButtonsData([
 					{ text: 'Home', linkTo: '/' },
-					{ text: 'Subpage2', linkTo: '/Subpage2' },
+					{ text: 'Subpage2', linkTo: '/subpage2' },
 				])
 				break
 			case 'subpage2':
 				setButtonsData([
 					{ text: 'Home', linkTo: '/' },
-					{ text: 'Subpage1', linkTo: '/Subpage1' },
+					{ text: 'Subpage1', linkTo: '/subpage1' },
 				])
 				break
 		}

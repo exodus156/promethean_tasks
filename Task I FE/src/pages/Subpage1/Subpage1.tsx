@@ -1,12 +1,14 @@
-import { Link } from 'react-router-dom'
-import './Subpage1.module.scss'
+import { PageContent } from 'components'
+import { useLoremIpsum } from 'hooks/useLoremIpsum'
 
 export const Subpage1 = () => {
+	const { text } = useLoremIpsum()
+
 	return (
-		<div className="flex flex-column h-full w-full">
-			<p>SubPage1</p>
-			<Link to="/">Home</Link>
-			<Link to="/subpage2">Subpage2</Link>
-		</div>
+		<PageContent
+			variant="subpage1"
+			contentTitle="SubPage1"
+			pageText={text}
+		/>
 	)
 }

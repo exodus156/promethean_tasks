@@ -4,6 +4,7 @@
 	@include flex();
 	flex-direction: column;
 	flex-grow: 1;
+	padding-top: 40px;
 
 	.navWrapper {
 		@include flex();
@@ -20,7 +21,9 @@
 
 	.textContent {
 		display: block;
-		margin-left: 40px;
-		margin-right: 40px;
+		margin-left: 60px;
+		margin-right: 60px;
+		text-align: justify;
+		margin-bottom: 20px;
 	}
 }

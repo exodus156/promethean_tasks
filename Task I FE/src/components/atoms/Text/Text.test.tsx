@@ -17,6 +17,6 @@ describe('Text', () => {
 
 		const textElement = await screen.findByText(mockText)
 
-		expect(textElement.className).toBe('text-xl')
+		expect(textElement.className).toContain('text-xl')
 	})
 })

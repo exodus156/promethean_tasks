@@ -8,28 +8,29 @@ type IconNames = 'home' | 'react' | 'typescript' | 'menu'
 
 export type IconProps = {
 	iconName: IconNames
+	className?: string
 }
 
-export const Icon: React.FC<IconProps> = ({ iconName }) => {
+export const Icon: React.FC<IconProps> = ({ iconName, className = '' }) => {
 	switch (iconName) {
 		case 'home':
 			return (
 				<HomeIcon
-					className={`${styles.icon} ${styles.iconStroke}`}
+					className={`${styles.icon} ${styles.iconStroke} ${className}`}
 					title="home-icon"
 				/>
 			)
 		case 'react':
 			return (
 				<ReactIcon
-					className={`${styles.icon} ${styles.iconFill}`}
+					className={`${styles.icon} ${styles.iconFill} ${className}`}
 					title="react-icon"
 				/>
 			)
 		case 'typescript':
 			return (
 				<TypescriptIcon
-					className={`${styles.icon} ${styles.iconFill}`}
+					className={`${styles.icon} ${styles.iconFill} ${className}`}
 					title="typescript-icon"
 				/>
 			)

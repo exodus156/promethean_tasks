@@ -6,7 +6,7 @@ export type TitleProps = {
 	className?: string
 }
 
-export const Title: React.FC<TitleProps> = ({ text, className }) => {
+export const Title: React.FC<TitleProps> = ({ text, className = '' }) => {
 	return (
 		<div
 			className={`${styles.titleWrapper} ${className}`}

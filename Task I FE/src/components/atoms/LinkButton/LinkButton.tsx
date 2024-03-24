@@ -11,6 +11,7 @@ export const LinkButton: React.FC<LinkButtonProps> = ({ text, linkTo }) => {
 		<Link
 			className={styles.linkButtonWrapper}
 			to={linkTo}
+			data-testid="linkButton"
 		>
 			<div>{text}</div>
 		</Link>

@@ -15,15 +15,17 @@ type MenuModalType =
 
 export type MenuModalProps = {
 	variant: 'login' | 'logout'
+	className?: string
 } & MenuModalType
 
 export const MenuModal: React.FC<MenuModalProps> = ({
 	variant,
+	className = '',
 	onLoginPress,
 	onLogoutPress,
 }) => {
 	return (
-		<div className={styles.menuModalWrapper}>
+		<div className={`${styles.menuModalWrapper} ${className}`}>
 			{variant === 'login' && (
 				<MenuModalItem>
 					<Button

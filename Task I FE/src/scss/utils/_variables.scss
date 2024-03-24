@@ -1,14 +1,16 @@
 $fontFamily: 'Helvetica';
 
-$fontSizeSm: 1.5vw;
-$fontSizeBase: 2vw;
-$fontSizeLg: 2.5vw;
-$fontSizeXl: 3vw;
+$fontSizeSm: 16px;
+$fontSizeBase: 20px;
+$fontSizeLg: 40px;
+$fontSizeXl: 50px;
 
-$lineHeightSm: 1.25vw;
-$lineHeightBase: 1.5vw;
-$lineHeightLg: 1.75vw;
-$lineHeightXl: 1.75vw;
+$fontSizeNavBar: 30px;
+
+$lineHeightSm: 18px;
+$lineHeightBase: 24px;
+$lineHeightLg: 36px;
+$lineHeightXl: 36px;
 
 $fontNormal: 400;
 $fontMedium: 500;
@@ -20,4 +22,7 @@ $mainTextColor: #323232;
 
 $buttonBgColor: #4f4f4f;
 $linkButtonBgColor: #735847;
-$iconButtonBgColor: #bfa798;
+$iconButtonBgColor: #a98773;
+
+$navBarBgColor: #bfa798;
+$navBarMenuBgColor: #cebbb0;

@@ -9,7 +9,7 @@ export type TextProps = {
 export const Text: React.FC<TextProps> = ({
 	children,
 	size = 'base',
-	className,
+	className = '',
 }) => {
 	return <span className={`text-${size} ${className}`}>{children}</span>
 }
