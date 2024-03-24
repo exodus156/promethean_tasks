@@ -1,3 +1,3 @@
-export * from './IconButton';
-export * from './MenuModal';
-export * from './Title';
+export * from './IconButton'
+export * from './MenuModal'
+export * from './Title'

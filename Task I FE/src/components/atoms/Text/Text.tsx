@@ -1,15 +1,15 @@
-type TextSize = "sm" | "base" | "lg" | "xl"
+type TextSize = 'sm' | 'base' | 'lg' | 'xl'
 
 export type TextProps = {
-	textContent: string
+	children: string
 	size?: TextSize
+	className?: string
 }
 
 export const Text: React.FC<TextProps> = ({
-	textContent,
-	size = "base"
+	children,
+	size = 'base',
+	className = '',
 }) => {
-	return (
-		<span className={`text-${size}`}>{textContent}</span>
-	)
+	return <span className={`text-${size} ${className}`}>{children}</span>
 }

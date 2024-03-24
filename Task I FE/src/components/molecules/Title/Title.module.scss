@@ -1,0 +1,9 @@
+@use 'scss/utils/' as *;
+
+.titleWrapper {
+	display: inline-block;
+
+	span {
+		@include flex();
+	}
+}

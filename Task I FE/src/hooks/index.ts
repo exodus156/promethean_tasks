@@ -1,1 +1,2 @@
-export { useBrowserRouter } from './useBrowserRouter';
+export { useBrowserRouter } from './useBrowserRouter'
+export { useLoremIpsum } from './useLoremIpsum'

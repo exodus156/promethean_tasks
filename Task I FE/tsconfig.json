@@ -1,39 +1,41 @@
 {
-  "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-    "paths": {
-      "assets/*": ["./src/assets/*"],
-      "assets": ["./src/assets"],
-      "components/*": ["./src/components/*"],
-      "components": ["./src/components"],
-      "context/*": ["./src/context/*"],
-      "context": ["./src/context"],
-      "hooks/*": ["./src/hooks/*"],
-      "hooks": ["./src/hooks"],
-      "pages/*": ["./src/pages/*"],
-      "pages": ["./src/pages"],
-      "scss/*": ["./src/scss/*"],
-      "scss": ["./src/scss"]
-    },
+	"compilerOptions": {
+		"target": "ES2020",
+		"useDefineForClassFields": true,
+		"lib": ["ES2020", "DOM", "DOM.Iterable"],
+		"module": "ESNext",
+		"skipLibCheck": true,
+		"paths": {
+			"assets/*": ["./src/assets/*"],
+			"assets": ["./src/assets"],
+			"components/*": ["./src/components/*"],
+			"components": ["./src/components"],
+			"context/*": ["./src/context/*"],
+			"context": ["./src/context"],
+			"hooks/*": ["./src/hooks/*"],
+			"hooks": ["./src/hooks"],
+			"pages/*": ["./src/pages/*"],
+			"pages": ["./src/pages"],
+			"scss/*": ["./src/scss/*"],
+			"scss": ["./src/scss"]
+		},
+		"types": ["@testing-library/jest-dom"],
 
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
+		/* Bundler mode */
+		"moduleResolution": "bundler",
+		"allowImportingTsExtensions": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"jsx": "react-jsx",
 
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
-  },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+		/* Linting */
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"esModuleInterop": true
+	},
+	"include": ["src"],
+	"references": [{ "path": "./tsconfig.node.json" }]
 }

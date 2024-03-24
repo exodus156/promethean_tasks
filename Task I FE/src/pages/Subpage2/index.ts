@@ -1,1 +1,1 @@
-export { Subpage2 } from './Subpage2';
+export { Subpage2 } from './Subpage2'

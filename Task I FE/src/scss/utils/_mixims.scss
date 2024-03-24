@@ -1,39 +1,39 @@
 @use './variables' as *;
 
 @mixin flex($alignItem: center, $justifyContent: center) {
-  display: flex;
-  align-items: $alignItem;
-  justify-content: $justifyContent;
+	display: flex;
+	align-items: $alignItem;
+	justify-content: $justifyContent;
 }
 
-@mixin textSm($fontWeight: $fontNormal, $fontSize: $fontSizeSm) {
-  font-family: $fontFamily;
-  font-weight: $fontWeight;
-  font-size: $fontSize;
-  line-height: $lineHeightSm;
-  color: $mainTextColor;
+@mixin textSm($fontWeight: $fontMedium, $fontSize: $fontSizeSm) {
+	font-family: $fontFamily;
+	font-weight: $fontWeight;
+	font-size: $fontSize;
+	line-height: $lineHeightSm;
+	color: $mainTextColor;
 }
 
-@mixin textBase($fontWeight: $fontNormal, $fontSize: $fontSizeBase) {
-  font-family: $fontFamily;
-  font-weight: $fontWeight;
-  font-size: $fontSize;
-  line-height: $lineHeightBase;
-  color: $mainTextColor;
+@mixin textBase($fontWeight: $fontMedium, $fontSize: $fontSizeBase) {
+	font-family: $fontFamily;
+	font-weight: $fontWeight;
+	font-size: $fontSize;
+	line-height: $lineHeightBase;
+	color: $mainTextColor;
 }
 
-@mixin textLg($fontWeight: $fontNormal, $fontSize: $fontSizeLg) {
-  font-family: $fontFamily;
-  font-weight: $fontWeight;
-  font-size: $fontSize;
-  line-height: $lineHeightLg;
-  color: $mainTextColor;
+@mixin textLg($fontWeight: $fontMedium, $fontSize: $fontSizeLg) {
+	font-family: $fontFamily;
+	font-weight: $fontWeight;
+	font-size: $fontSize;
+	line-height: $lineHeightLg;
+	color: $mainTextColor;
 }
 
-@mixin textXl($fontWeight: $fontNormal, $fontSize: $fontSizeXl) {
-  font-family: $fontFamily;
-  font-weight: $fontWeight;
-  font-size: $fontSize;
-  line-height: $lineHeightXl;
-  color: $mainTextColor;
+@mixin textXl($fontWeight: $fontMedium, $fontSize: $fontSizeXl) {
+	font-family: $fontFamily;
+	font-weight: $fontWeight;
+	font-size: $fontSize;
+	line-height: $lineHeightXl;
+	color: $mainTextColor;
 }

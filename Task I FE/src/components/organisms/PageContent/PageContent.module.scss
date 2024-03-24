@@ -1,0 +1,29 @@
+@use 'scss/utils/' as *;
+
+.pageContentWrapper {
+	@include flex();
+	flex-direction: column;
+	flex-grow: 1;
+	padding-top: 40px;
+
+	.navWrapper {
+		@include flex();
+		justify-content: space-evenly;
+		width: 40%;
+		margin-top: 48px;
+	}
+
+	.title {
+		display: block;
+		margin-top: 48px;
+		margin-bottom: 24px;
+	}
+
+	.textContent {
+		display: block;
+		margin-left: 60px;
+		margin-right: 60px;
+		text-align: justify;
+		margin-bottom: 20px;
+	}
+}

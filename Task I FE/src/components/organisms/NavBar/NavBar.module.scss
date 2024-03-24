@@ -1,0 +1,61 @@
+@use 'scss/utils/' as *;
+
+.navBarWrapper {
+	@include flex();
+	max-height: 50px;
+	height: 50px;
+	border-bottom: $buttonBgColor 1px solid;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: $navBarBgColor;
+
+	.navTitleWrapper {
+		flex: 1 0;
+		display: flex;
+		align-items: center;
+		justify-content: start;
+		margin-left: 12px;
+
+		.navTitleIcon {
+			width: 32px;
+			height: 32px;
+		}
+
+		.navTitle {
+			margin-left: 8px;
+			margin-top: 4px;
+			span {
+				font-size: $fontSizeNavBar;
+			}
+		}
+	}
+
+	.navMenuWrapper {
+		flex: 1 0;
+		display: flex;
+		align-items: center;
+		justify-content: end;
+
+		.navBarUsername {
+			margin-right: 12px;
+		}
+
+		.dropdownMenuWrapper {
+			position: relative;
+
+			.menuBase {
+				right: 4px;
+				top: 44px;
+			}
+
+			.menuVisible {
+				display: inline-block;
+			}
+
+			.menuHidden {
+				display: none;
+			}
+		}
+	}
+}
