@@ -1,6 +1,6 @@
 import { Home, Subpage1, Subpage2 } from 'pages'
 import { useMemo } from 'react'
-import { createBrowserRouter } from 'react-router-dom'
+import { Navigate, createBrowserRouter } from 'react-router-dom'
 
 export const useBrowserRouter = () => {
 	const router = useMemo(
@@ -17,6 +17,15 @@ export const useBrowserRouter = () => {
 				{
 					path: '/subpage2',
 					element: <Subpage2 />,
+				},
+				{
+					path: '*',
+					element: (
+						<Navigate
+							to="/"
+							replace
+						/>
+					),
 				},
 			]),
 		[],

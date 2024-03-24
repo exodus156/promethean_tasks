@@ -34,6 +34,7 @@ module.exports = {
 			{ sortDir: 'asc', pattern: '**/index.ts' },
 		],
 		'import/no-named-as-default': 0,
+		'@typescript-eslint/no-explicit-any': 'off',
 	},
 	settings: {
 		react: {
