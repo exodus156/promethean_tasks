@@ -5,8 +5,6 @@ module.exports = {
 		'eslint:recommended',
 		'plugin:@typescript-eslint/recommended',
 		'plugin:react-hooks/recommended',
-		'plugin:import/recommended',
-		'plugin:@typescript-eslint/recommended',
 		'eslint-config-prettier',
 	],
 	ignorePatterns: ['dist', '.eslintrc.cjs'],
@@ -18,15 +16,6 @@ module.exports = {
 			{ allowConstantExport: true },
 		],
 		'import/newline-after-import': ['error', { count: 1 }],
-		'no-unused-vars': [
-			'error',
-			{
-				vars: 'all',
-				args: 'after-used',
-				ignoreRestSiblings: true,
-				argsIgnorePattern: '^_',
-			},
-		],
 		'react/react-in-jsx-scope': 'off',
 		'import/no-unresolved': ['error', { ignore: ['\\.svg\\?react$'] }],
 		'sort-exports/sort-exports': [
@@ -35,6 +24,7 @@ module.exports = {
 		],
 		'import/no-named-as-default': 0,
 		'@typescript-eslint/no-explicit-any': 'off',
+		'@typescript-eslint/no-unused-vars': 'off',
 	},
 	settings: {
 		react: {
